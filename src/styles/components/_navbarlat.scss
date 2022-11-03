@@ -1,0 +1,41 @@
+.navbar-lat{
+    display: flex;
+    justify-content: center;
+    background: black;
+    width: 117px;
+    /* margin: 0 auto; */
+    height: 1024px;
+    position: absolute;
+    top: 10px;
+    ul {
+
+        a {
+          
+                li {
+             
+                cursor: pointer;
+                    img{
+                        width: 64px;
+                    }
+              
+                }
+                
+            }
+    }
+}
+  
+.link-navbar-lat{
+    width: 100px;
+    height: 316px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.link-wrap{
+
+    display: flex;
+    align-items: center;
+}

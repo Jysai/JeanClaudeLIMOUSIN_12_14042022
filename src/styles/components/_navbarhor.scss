@@ -1,0 +1,36 @@
+.logo-navbar{
+    margin-left: 29px;
+    z-index: 1;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    height: 91px;
+    align-items: center;
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        width: 994px;
+        height: 24px;
+        margin: 0 auto;
+        
+        a {
+        text-decoration: none;
+            li {
+            color: $white;
+            cursor: pointer;
+         
+          
+            }
+            
+        }
+    }
+}
+  
+
+  
