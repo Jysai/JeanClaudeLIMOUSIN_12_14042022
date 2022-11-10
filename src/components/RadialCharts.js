@@ -2,7 +2,7 @@ import React from 'react';
 import { RadialBarChart, PolarAngleAxis, RadialBar } from 'recharts';
 
 const data = [
-    { name: 'A', x: 1, fill: 'red' },
+    {  data: 80 },
 
 
   ];
@@ -11,13 +11,15 @@ const data = [
 const RadialCharts = () => {
 
   return (
-    <RadialBarChart width={143} height={143} data={data}
+    <div className="radial-chart">
+    <RadialBarChart width={258} height={263} data={data}
     // cx={30 / 2}
     // cy={30 / 2}
-    innerRadius={250}
-    // outerRadius={18}
+    innerRadius="70%"
+    outerRadius="85%"
     barSize={8}
-    startAngle={10}
+    startAngle={180}
+    endAngle={-180}
     >
       <PolarAngleAxis
        
@@ -25,9 +27,14 @@ const RadialCharts = () => {
   
         tick={false}
       />
-      <RadialBar background />
+      <RadialBar 
+      background={{ fill: "white" }}
+      fill="#FF0000" 
+      cornerRadius="50%" 
+      dataKey="data"  />
 
     </RadialBarChart>
+    </div>
   );
 };
 

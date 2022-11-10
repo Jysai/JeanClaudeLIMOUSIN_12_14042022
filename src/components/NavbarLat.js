@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from '../assets/img/logo.png'
+
 import Swim from '../assets/img/swim.png'
 import Bike from '../assets/img/bike.png'
 import Yoga from '../assets/img/yoga.png'

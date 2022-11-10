@@ -6,10 +6,12 @@
 
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background: black;
     height: 91px;
     align-items: center;
+    width: 1327px;
+    font-size: 24px;
     ul {
         display: flex;
         flex-direction: row;
