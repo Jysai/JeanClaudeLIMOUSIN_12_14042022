@@ -66,9 +66,9 @@ const data = [
 
 
 
-const renderCustomizedLabel = () => {
-  return <g></g>;
-};
+// const renderCustomizedLabel = () => {
+//   return <g></g>;
+// };
 
 const BarCharts = () => {
   return (
@@ -87,6 +87,7 @@ const BarCharts = () => {
       <CartesianGrid stroke="#f5f5f5" vertical={false} />
       <XAxis dataKey="name" tickLine={false} />
       <YAxis tickLine={false} orientation={"right"} axisLine={false}  />
+      {/* <YAxis tickLine={false}  axisLine={false} dataKey="calorie" /> */}
       <Tooltip dataKey="poids" />
 
       <Bar

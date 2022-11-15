@@ -43,7 +43,7 @@ const RadarCharts = () => {
   return (
 
     <div className="radar-chart">
-    <RadarChart outerRadius={100} width={258} height={263} data={data} fill="white"  > 
+    <RadarChart outerRadius={90} width={258} height={263} data={data} fill="white"  > 
       <PolarGrid radialLines={false} />
       <PolarAngleAxis dataKey="subject" />
 

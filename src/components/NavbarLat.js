@@ -9,13 +9,13 @@ import Muscle from '../assets/img/body.png'
 const NavbarLat = () => {
     return (
         <div className="navbar-lat">
-                       <div className='link-wrap'>
-            <ul  className='link-navbar-lat'>        
+                      
+            <ul  className='link-wrap'>        
                 <NavLink to="/yoga" 
                 className={(nav) => (nav.isActive ? "nav-active" : "")}
                 end
                 >
-                    <li className='nav-yoga '>
+                    <li className='nav-yoga'>
                         <img src={Yoga} alt="" className='nav-icons'/>
                         
                         
@@ -24,7 +24,7 @@ const NavbarLat = () => {
                 <NavLink to="/swim" 
                 className={(nav) => (nav.isActive ? "nav-active" : "")}
                 >
-                    <li className='nav-swim '>
+                    <li className='nav-swim'>
                         <img src={Swim} alt="" className='nav-icons'/>
                     
                         </li>
@@ -32,7 +32,7 @@ const NavbarLat = () => {
                 <NavLink to="/bike" 
                 className={(nav) => (nav.isActive ? "nav-active" : "")}
                 >
-                    <li className='nav-bike '>
+                    <li className='nav-bike'>
                         <img src={Bike} alt="" className='nav-icons'/>
                        
                         </li>
@@ -45,7 +45,7 @@ const NavbarLat = () => {
                         </li>
                 </NavLink>
             </ul>
-            </div>
+           
         </div>
     );
 };

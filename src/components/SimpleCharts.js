@@ -1,4 +1,4 @@
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import { LineChart, Line, XAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 const data = [
   {
@@ -49,12 +49,13 @@ const SimpleCharts = () => {
 
     return (
       <div className="simple-chart">
+   
         <LineChart
           width={258}
           height={263}
           data={data}
           
-    
+  
         >
           <CartesianGrid horizontal={false} vertical={false} fill="#FF0000" />
           <XAxis dataKey="name" tickLine={false} color="white" />
@@ -64,7 +65,10 @@ const SimpleCharts = () => {
           <Line type="monotone" dataKey="pv" stroke="white" activeDot={{ r: 8 }}  strokeWidth={1} dot={false}  />
 
         </LineChart>
+
+
         </div>
+        
       
     );
   }
