@@ -1,39 +1,46 @@
-import React from 'react';
-import { RadialBarChart, PolarAngleAxis, RadialBar } from 'recharts';
+import React from "react";
+import {
+  RadialBarChart,
+  PolarAngleAxis,
+  RadialBar,
+  PieChart,
+  Pie,
+  Cell,
+  Label,
+} from "recharts";
 
 const data = [
-    {  data: 80 },
-
-
-  ];
-
+  { id: "1", name: "L1", value: 100 },
+  { id: "2", name: "L2", value: 12 },
+];
 
 const RadialCharts = () => {
-
   return (
     <div className="radial-chart">
-    <RadialBarChart width={258} height={263} data={data}
-    // cx={30 / 2}
-    // cy={30 / 2}
-    innerRadius="70%"
-    outerRadius="85%"
-    barSize={8}
-    startAngle={180}
-    endAngle={-180}
-    >
-      <PolarAngleAxis
-       
-        domain={[0, 0]}
-  
-        tick={false}
-      />
-      <RadialBar 
-      background={{ fill: "white" }}
-      fill="#FF0000" 
-      cornerRadius="50%" 
-      dataKey="data"  />
+      <span className="legedend-radialchart-top">Score</span>
 
-    </RadialBarChart>
+      <PieChart width={180} height={180}>
+        <Pie
+          data={data}
+          dataKey="value"
+          innerRadius="90%"
+          outerRadius="100%"
+          fill="red"
+          startAngle={90}
+          endAngle={-270}
+          paddingAngle={0}
+          blendStroke
+        > 
+        
+          <Label
+            value="12%
+de votre objectif"
+            position="center"
+           
+          />
+          <Cell key="test" fill="#CCC" />
+        </Pie>
+      </PieChart>
     </div>
   );
 };

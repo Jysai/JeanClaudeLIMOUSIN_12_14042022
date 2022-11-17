@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
+body {
+  font-family: "Roboto-Regular";
+
+  max-width: 1444px;
+  margin: 0 auto;
+}
+li {
+  list-style-type: none;
+}
+
+.wrap-simple-radar-and-radial-charts {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* NavBar horizontal*/
+
+.logo-navbar {
+  margin-left: 29px;
+  z-index: 1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background: black;
+  height: 91px;
+  align-items: center;
+  min-width: 1024px;
+  font-size: 24px;
+}
+
+.link-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  width: 100%;
+  height: 24px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  color: white;
+}
+
+.main {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px 0px 100px;
+}
+
+/* Navbar Latéral */
+
+.navbar-lat {
+  display: flex;
+  background: black;
+  min-width: 117px;
+  height: 1024px;
+  align-items: center;
+  margin-top: -91px;
+}
+
+.link-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 350px;
+  justify-content: space-between;
+  margin-left: -9px;
+}
+
+/* Welcome */
+
+.welcome {
+  min-width: 380px;
+  margin-bottom: 80px;
+}
+
+.welcome-title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 24px;
+}
+
+.welcome-name {
+  color: red;
+}
+
+/* Container Nutrition */
+
+.recharts-wrapper {
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.wrapper-nutrition {
+  background: #fbfbfb;
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 2%);
+  border-radius: 5px;
+  /* height: 124px; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 44px;
+  flex-direction: row;
+
+  height: 124px;
+}
+
+.info-wrapper-nutrition {
+  display: flex;
+  flex-direction: row;
+  margin-left: 25px;
+}
+
+.wrapper-quantity-nutrition {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  justify-content: space-around;
+}
+
+.quantity-nutrition {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.nutrition {
+  display: flex;
+  flex-direction: column;
+
+  width: 258px;
+}
+
+/* All-charts */
+.wrap-simple-radar-and-radial-charts {
+    width: 835px;
+}
+
+/* Radar-Chart */
+
+.radar-chart {
+    width:
+258px;
+
+  height: 263px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #282d30;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* Radial-Chart */
+
+.radial-chart {
+  background: #fbfbfb;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  
+  width: 258px;
+  height: 263px;
+  flex-direction: column;
+}
+
+.legedend-radialchart-top{
+    margin-left: 30px;
+    
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 24px;
+/* identical to box height, or 160% */
+
+
+color: #20253A;
+}
+
+/* simple-chart */
+
+.simple-chart {
+  background-color: red;
+  height: 263px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.legend-simplechart-top {
+  margin: 25px 0 0 30px;
+  height: 48px;
+
+  top: calc(50% - 48px / 2 - 4.5px);
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  width: 140px;
+}
+
+/* Bar-chart */
+
+.bar-chart {
+  background-color: #fbfbfb;
+  height: 320px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+  border-radius: 5px;
+  margin-bottom: 44px;
+  width: 835px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.legend-barchart-top {
+  display: flex;
+  justify-content: space-between;
+  width: 805px;
+  margin: 0 auto;
+}
+
+.analytics-dashboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1140px;
+}

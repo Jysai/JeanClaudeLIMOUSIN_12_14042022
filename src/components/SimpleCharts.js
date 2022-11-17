@@ -1,44 +1,51 @@
-import { LineChart, Line, XAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import {
+  LineChart,
+  Line,
+  XAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+} from "recharts";
 
 const data = [
   {
-    name: 'L',
+    name: "L",
     uv: 4000,
     pv: 2400,
     amt: 2400,
   },
   {
-    name: 'M',
+    name: "M",
     uv: 3000,
     pv: 1398,
     amt: 2210,
   },
   {
-    name: 'M',
+    name: "M",
     uv: 2000,
     pv: 9800,
     amt: 2290,
   },
   {
-    name: 'J',
+    name: "J",
     uv: 2780,
     pv: 3908,
     amt: 2000,
   },
   {
-    name: 'V',
+    name: "V",
     uv: 1890,
     pv: 4800,
     amt: 2181,
   },
   {
-    name: 'S',
+    name: "S",
     uv: 2390,
     pv: 3800,
     amt: 2500,
   },
   {
-    name: 'S',
+    name: "D",
     uv: 3490,
     pv: 4300,
     amt: 2100,
@@ -46,31 +53,26 @@ const data = [
 ];
 
 const SimpleCharts = () => {
+  return (
+    <div className="simple-chart">
+      <div className="legend-simplechart-top">Durée moyenne des sessions</div>
+      <LineChart width={258} height={180} data={data} >
+        <CartesianGrid horizontal={false} vertical={false} fill="#FF0000" />
+        <XAxis dataKey="name" tickLine={false} color="white" axisLine={false} />
 
-    return (
-      <div className="simple-chart">
-   
-        <LineChart
-          width={258}
-          height={263}
-          data={data}
-          
-  
-        >
-          <CartesianGrid horizontal={false} vertical={false} fill="#FF0000" />
-          <XAxis dataKey="name" tickLine={false} color="white" />
-       
-          <Tooltip />
-       
-          <Line type="monotone" dataKey="pv" stroke="white" activeDot={{ r: 8 }}  strokeWidth={1} dot={false}  />
+        <Tooltip />
 
-        </LineChart>
+        <Line
+          type="monotone"
+          dataKey="pv"
+          stroke="white"
+          activeDot={{ r: 8 }}
+          strokeWidth={1}
+          dot={false}
+        />
+      </LineChart>
+    </div>
+  );
+};
 
-
-        </div>
-        
-      
-    );
-  }
-
-  export default SimpleCharts;
+export default SimpleCharts;

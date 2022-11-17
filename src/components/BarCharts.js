@@ -73,9 +73,11 @@ const data = [
 const BarCharts = () => {
   return (
     <div className="bar-chart">
+      <div className="legend-barchart-top"> <span>Activité quotidienne</span><div><span>Poids (kg)</span><span>Calories brûlées (kCal)</span></div></div>
+   
     <BarChart
-      width={835}
-      height={320}
+      width={805}
+      height={230}
       data={data}
       // margin={{
       //   top: 5,

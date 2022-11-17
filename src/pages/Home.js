@@ -13,8 +13,9 @@ const Home = () => {
   return (
     <div>
       <NavbarHor />
-      <NavbarLat />
       <div className="main">
+      <NavbarLat />
+        <div className="dashboard">
         <Welcome />
         <div className="analytics-dashboard">
         <div className="main-wrap-charts">
@@ -28,6 +29,7 @@ const Home = () => {
           </div>
         </div>
         <Nutrition  />
+        </div>
         </div>
       </div>
     </div>

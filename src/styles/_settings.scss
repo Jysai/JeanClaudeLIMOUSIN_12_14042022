@@ -26,17 +26,22 @@ body {
     position: absolute;
     top: 131px;
     padding-left: 210px;
-    width: 1154px
+    
   }
 
   .wrap-simple-radar-and-radial-charts{
-    width: 835px;
+   
     display: flex;
     justify-content: space-between;
   }
 
-  .analytics-dashboard{
-    display: flex;
+  .bar-chart{
+ 
+    background-color: #FBFBFB;
 
-    justify-content: space-between;
-  }
+    height: 320px;
+ 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+border-radius: 5px;
+margin-bottom: 44px;
+}
