@@ -1,4 +1,10 @@
-import { Radar, RadarChart, PolarGrid, PolarAngleAxis } from "recharts";
+import {
+  Radar,
+  RadarChart,
+  PolarGrid,
+  PolarAngleAxis,
+  ResponsiveContainer,
+} from "recharts";
 
 const data = [
   {
@@ -41,14 +47,19 @@ const data = [
 
 const RadarCharts = () => {
   return (
-
     <div className="radar-chart">
-    <RadarChart outerRadius={90} width={258} height={263} data={data} fill="white"  > 
-      <PolarGrid radialLines={false} />
-      <PolarAngleAxis dataKey="subject" />
+      <ResponsiveContainer width="100%" height="100%">
+        <RadarChart
+          outerRadius={80}
+          data={data}
+          fill="white"
+        >
+          <PolarGrid radialLines={false} />
+          <PolarAngleAxis dataKey="subject" />
 
-      <Radar dataKey="A" fill="#FF0101" fillOpacity={0.7} />
-    </RadarChart>
+          <Radar dataKey="A" fill="#FF0101" fillOpacity={0.7} />
+        </RadarChart>
+      </ResponsiveContainer>
     </div>
   );
 };

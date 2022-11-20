@@ -1,4 +1,4 @@
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts";
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 
 const data = [
   {
@@ -72,12 +72,15 @@ const data = [
 
 const BarCharts = () => {
   return (
+    
     <div className="bar-chart">
       <div className="legend-barchart-top"> <span>Activité quotidienne</span><div><span>Poids (kg)</span><span>Calories brûlées (kCal)</span></div></div>
-   
+      <ResponsiveContainer 
+      width="100%" 
+      
+      height={230}>
     <BarChart
-      width={805}
-      height={230}
+
       data={data}
       // margin={{
       //   top: 5,
@@ -107,6 +110,7 @@ const BarCharts = () => {
         radius={[5, 5, 0, 0]}
       />
     </BarChart>
+    </ResponsiveContainer>
     </div>
   );
 };

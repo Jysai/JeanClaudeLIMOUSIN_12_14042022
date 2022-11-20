@@ -14,22 +14,22 @@ const Home = () => {
     <div>
       <NavbarHor />
       <div className="main">
-      <NavbarLat />
+        <NavbarLat />
         <div className="dashboard">
-        <Welcome />
-        <div className="analytics-dashboard">
-        <div className="main-wrap-charts">
-        
-          <BarCharts />
-
-          <div className="wrap-simple-radar-and-radial-charts">
-            <SimpleCharts />
-            <RadarCharts />
-            <RadialCharts />
+          <Welcome />
+          <div className="analytics-dashboard">
+            <div className="main-wrap-charts">
+              <BarCharts />
+              
+                <div className="wrap-simple-radar-and-radial-charts">
+                  <SimpleCharts />
+                  <RadarCharts />
+                  <RadialCharts />
+                </div>
+              </div>
+              <Nutrition />
+            
           </div>
-        </div>
-        <Nutrition  />
-        </div>
         </div>
       </div>
     </div>

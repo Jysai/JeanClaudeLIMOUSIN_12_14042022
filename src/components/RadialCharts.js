@@ -7,6 +7,7 @@ import {
   Pie,
   Cell,
   Label,
+  ResponsiveContainer
 } from "recharts";
 
 const data = [
@@ -18,8 +19,10 @@ const RadialCharts = () => {
   return (
     <div className="radial-chart">
       <span className="legedend-radialchart-top">Score</span>
-
-      <PieChart width={180} height={180}>
+      <ResponsiveContainer width="100%" height="100%">
+      <PieChart 
+      
+      >
         <Pie
           data={data}
           dataKey="value"
@@ -41,6 +44,7 @@ de votre objectif"
           <Cell key="test" fill="#CCC" />
         </Pie>
       </PieChart>
+      </ResponsiveContainer>
     </div>
   );
 };

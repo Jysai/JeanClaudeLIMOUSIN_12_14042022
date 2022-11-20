@@ -56,7 +56,10 @@ const SimpleCharts = () => {
   return (
     <div className="simple-chart">
       <div className="legend-simplechart-top">Durée moyenne des sessions</div>
-      <LineChart width={258} height={180} data={data} >
+      <ResponsiveContainer width="100%" height={180}>
+      <LineChart 
+    
+       data={data} >
         <CartesianGrid horizontal={false} vertical={false} fill="#FF0000" />
         <XAxis dataKey="name" tickLine={false} color="white" axisLine={false} />
 
@@ -71,6 +74,7 @@ const SimpleCharts = () => {
           dot={false}
         />
       </LineChart>
+      </ResponsiveContainer>
     </div>
   );
 };
