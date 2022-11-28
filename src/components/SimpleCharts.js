@@ -7,73 +7,50 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-const data = [
-  {
-    name: "L",
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
-  },
-  {
-    name: "M",
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
-  },
-  {
-    name: "M",
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
-  },
-  {
-    name: "J",
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
-  },
-  {
-    name: "V",
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
-  },
-  {
-    name: "S",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
-  },
-  {
-    name: "D",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
-  },
-];
+const SimpleCharts = (prop) => {
+  
+  function titleDayXAxis(day) {
+    switch (day) {
+      case 1:
+        return "L";
+      case 2:
+        return "M";
+      case 3:
+        return "M";
+      case 4:
+        return "J";
+      case 5:
+        return "V";
+      case 6:
+        return "S";
+     case 7:
+        return "D";
+      default:
+    }
+  }
 
-const SimpleCharts = () => {
+
   return (
     <div className="simple-chart">
-      <div className="legend-simplechart-top">Durée moyenne des sessions</div>
-      <ResponsiveContainer width="100%" height={180}>
+      
+      <ResponsiveContainer width="100%" height="100%">
       <LineChart 
-    
-       data={data} >
-        <CartesianGrid horizontal={false} vertical={false} fill="#FF0000" />
-        <XAxis dataKey="name" tickLine={false} color="white" axisLine={false} />
+      
+       data={prop.userSession?.sessions} >
+        <CartesianGrid horizontal={false} vertical={false} fill="#FF0000"  />
+        <XAxis dataKey="day" tickFormatter={titleDayXAxis} tickLine={false} color="white" axisLine={false} />
 
         <Tooltip />
 
         <Line
           type="monotone"
-          dataKey="pv"
+          dataKey="sessionLength"
           stroke="white"
           activeDot={{ r: 8 }}
           strokeWidth={1}
           dot={false}
         />
-      </LineChart>
+      </LineChart >
       </ResponsiveContainer>
     </div>
   );

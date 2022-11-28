@@ -6,7 +6,7 @@
 body {
   font-family: "Roboto-Regular";
   max-width: 1440px;
-  min-width: 780px;
+  min-width: 1024px;
   margin: 0 auto;
 }
 li {
@@ -59,14 +59,9 @@ li {
   display: flex;
   justify-content: flex-start;
   
-  
 }
 
-.main-wrap-charts{
- 
-  
-  margin-right: 25px;
-}
+
 
 .dashboard {
   display: flex;
@@ -275,11 +270,55 @@ color: #20253A;
 }
 
 
-@media screen and (max-width: 1352px) {
+.main-wrap-charts{
+  margin-right: 27px;
+}
+
+.wrap-error{
+  height: 877px;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.error-and-message404{
+  display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+.error-404{
+  font-size: 12vh;
+  color: red;
+}
+.message-404{
+
+}
+.home-404{
+
+}
+
+@media screen and (max-width: 1355px) {
+
 
 .dashboard{
-  margin-left: 40px;
-  margin-top: 10px;
+ 
+  margin: 0px 0px 0px 0px;
+  margin-left: 32px;
+}
+
+.welcome-title {
+
+  font-size: 32px;
+
+}
+
+.main-wrap-charts{
+  margin-right: 0px;
 }
 
 .nutrition{
@@ -293,23 +332,26 @@ color: #20253A;
 .wrapper-nutrition{
   width:  191px;;
   margin-bottom: 5px;
+  height: 89px
 }
 
 
 
 .info-wrapper-nutrition{
   
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 
 .wrap-simple-radar-and-radial-charts{
-  margin-bottom: 25px;
+  margin-bottom: 15px;
  
 }
 .analytics-dashboard {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  
 }
 
 .bar-chart{
@@ -318,10 +360,23 @@ color: #20253A;
 
 .welcome{
   margin: 10px;
+  margin-top: 0px;
 }
 
 
+.simple-chart, .radial-chart{
+  height: 201px;
+    width: 201px;
+}
 
+.radar-chart{
+  height: 201px;
+    width: 250px;
+}
+
+.bar-chart{
+  height: 268px;
+}
 
 }
 

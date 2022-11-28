@@ -1,6 +1,7 @@
 import React from "react";
 
-const Nutrition = () => {
+const Nutrition = (prop) => {
+  
   return (
     <div className="nutrition">
       <div className="wrapper-nutrition">
@@ -25,7 +26,7 @@ const Nutrition = () => {
             />
           </svg>
           <div className="wrapper-quantity-nutrition">
-            <div className="quantity-nutrition">1930kCal</div>
+            <div className="quantity-nutrition">{prop.nutrition?.calorieCount} kCal</div>
             <span>Calories</span>
           </div>
         </div>
@@ -52,7 +53,7 @@ const Nutrition = () => {
             />
           </svg>
           <div className="wrapper-quantity-nutrition">
-            <div className="quantity-nutrition">155g</div>
+            <div className="quantity-nutrition">{prop.nutrition?.proteinCount} g</div>
             <span>Protéines</span>
           </div>
         </div>
@@ -87,7 +88,7 @@ const Nutrition = () => {
             />
           </svg>
           <div className="wrapper-quantity-nutrition">
-            <div className="quantity-nutrition">290g</div>
+            <div className="quantity-nutrition">{prop.nutrition?.carbohydrateCount} g</div>
             <span>Glucides</span>
           </div>
         </div>
@@ -103,7 +104,7 @@ const Nutrition = () => {
 </svg>
 
           <div className="wrapper-quantity-nutrition">
-            <div className="quantity-nutrition">290g</div>
+            <div className="quantity-nutrition">{prop.nutrition?.lipidCount}  g</div>
             <span>Lipides</span>
           </div>
         </div>

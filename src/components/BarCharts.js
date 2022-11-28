@@ -1,116 +1,52 @@
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+} from "recharts";
 
-const data = [
-  {
-    name: "1",
-    calorie: 450,
-    poids: 68,
-     amt: 2400,
-  },
-  {
-    name: "2",
-    calorie: 450,
-    poids: 68,
-    amt: 2400,
-  },
-  {
-    name: "3",
-    calorie: 450,
-    poids: 68,
-    amt: 2400,
-  },
-  {
-    name: "4",
-    calorie: 450,
-    poids: 68,
-    amt: 2400,
-  },
-  {
-    name: "5",
-    calorie: 450,
-    poids: 68,
-    amt: 2400,
-  },
-  {
-    name: "6",
-    calorie: 450,
-    poids: 68,
-    amt: 2400,
-  },
-  {
-    name: "7",
-    calorie: 450,
-    poids: 68,
-    amt: 2400,
-  },
-  {
-    name: "8",
-    calorie: 450,
-    poids: 68,
-    amt: 2400,
-  },
-  {
-    name: "9",
-    calorie: 450,
-    poids: 68,
-    amt: 2400,
-  },
-  {
-    name: "10",
-
-    calorie: 450,
-    poids: 68,
-    amt: 2400,
-  },
-];
-
-
-
-// const renderCustomizedLabel = () => {
-//   return <g></g>;
-// };
-
-const BarCharts = () => {
-  return (
-    
+const BarCharts = (prop) => {
+  
+   return (
     <div className="bar-chart">
-      <div className="legend-barchart-top"> <span>Activité quotidienne</span><div><span>Poids (kg)</span><span>Calories brûlées (kCal)</span></div></div>
-      <ResponsiveContainer 
-      width="100%" 
-      
-      height={230}>
-    <BarChart
+      <div className="legend-barchart-top">
+        {" "}
+        <span>Activité quotidienne</span>
+        <div>
+          <span>Poids (kg)</span>
+          <span>Calories brûlées (kCal)</span>
+        </div>
+      </div>
+      <ResponsiveContainer width="100%" height={230}>
+        <BarChart
+          data={prop.userActivity?.sessions}
+        >
+          <CartesianGrid strokeDasharray="1 5" stroke="grey" vertical={false} />
+          <XAxis dataKey="name" tickLine={false} />
+          <YAxis yAxisId="left" tickLine={false} orientation={"right"} axisLine={false} tickCount={3} domain={["dataMin-1", "dataMax+2"]}/>
+          <YAxis yAxisId="right" tickLine={false} orientation={"left"}  tick={false} hide  />
+          <Tooltip  />
 
-      data={data}
-      // margin={{
-      //   top: 5,
-      //   right: 0,
-      //   left: 0,
-      //   bottom: 5
-      // }}
-    >
-      <CartesianGrid stroke="#f5f5f5" vertical={false} />
-      <XAxis dataKey="name" tickLine={false} />
-      <YAxis tickLine={false} orientation={"right"} axisLine={false}  />
-      {/* <YAxis tickLine={false}  axisLine={false} dataKey="calorie" /> */}
-      <Tooltip dataKey="poids" />
-
-      <Bar
-        dataKey="poids"
-        fill="#282D30"
-
-        maxBarSize={7}
-        radius={[5, 5, 0, 0]}
-      />
-      <Bar
-        dataKey="calorie"
-        fill="#E60000"
+          <Bar
+            yAxisId="left"
+            dataKey="kilogram"
+            fill="#282D30"
+            maxBarSize={7}
+            radius={[5, 5, 0, 0]}
+          />
+          <Bar
+            yAxisId="right"
+            dataKey="calories"
+            fill="#E60000"
+            maxBarSize={7}
+            radius={[5, 5, 0, 0]}
+          />
+        </BarChart>
         
-        maxBarSize={7}
-        radius={[5, 5, 0, 0]}
-      />
-    </BarChart>
-    </ResponsiveContainer>
+      </ResponsiveContainer>
     </div>
   );
 };

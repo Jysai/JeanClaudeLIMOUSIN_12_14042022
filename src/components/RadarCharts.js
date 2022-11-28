@@ -5,63 +5,52 @@ import {
   PolarAngleAxis,
   ResponsiveContainer,
 } from "recharts";
+import React from "react";
+import PropTypes from "prop-types";
 
-const data = [
-  {
-    subject: "Intensité",
-    A: 120,
-    B: 110,
-    fullMark: 150,
-  },
-  {
-    subject: "Vitesse",
-    A: 98,
-    B: 130,
-    fullMark: 150,
-  },
-  {
-    subject: "Force",
-    A: 86,
-    B: 130,
-    fullMark: 150,
-  },
-  {
-    subject: "Endurance",
-    A: 99,
-    B: 100,
-    fullMark: 150,
-  },
-  {
-    subject: "Energie",
-    A: 85,
-    B: 90,
-    fullMark: 150,
-  },
-  {
-    subject: "Cardio",
-    A: 65,
-    B: 85,
-    fullMark: 150,
-  },
-];
+const RadarCharts = (prop) => {
 
-const RadarCharts = () => {
+ 
+  function titlePolarAngle(kind) {
+    switch (kind) {
+      case 1:
+        return "Cardio";
+      case 2:
+        return "Energie";
+      case 3:
+        return "Endurance";
+      case 4:
+        return "Force";
+      case 5:
+        return "Vitesse";
+      case 6:
+        return "Intensité";
+      default:
+    }
+  }
+
   return (
+    
     <div className="radar-chart">
       <ResponsiveContainer width="100%" height="100%">
         <RadarChart
           outerRadius={80}
-          data={data}
+          data={prop.userPerformance?.data}
           fill="white"
         >
           <PolarGrid radialLines={false} />
-          <PolarAngleAxis dataKey="subject" />
+          <PolarAngleAxis dataKey="kind" tickFormatter={titlePolarAngle} />
 
-          <Radar dataKey="A" fill="#FF0101" fillOpacity={0.7} />
+          <Radar dataKey="value" fill="#FF0101" fillOpacity={0.7} />
         </RadarChart>
       </ResponsiveContainer>
     </div>
   );
+};
+
+RadarCharts.prototypes = {
+  prop: PropTypes.array,
+  data: PropTypes.array,
 };
 
 export default RadarCharts;
