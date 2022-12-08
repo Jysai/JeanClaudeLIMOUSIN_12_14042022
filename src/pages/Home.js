@@ -18,6 +18,7 @@ import {
   getUserActivity,
 } from "../services/getData";
 
+
 const Home = () => {
 
   const { id } = useParams();
@@ -25,10 +26,13 @@ const Home = () => {
   const [userPerformance, setUserPerformance] = useState([]);
   const [userSession, setUserSession] = useState([]);
   const [userActivity, setUserActivity] = useState([]);
+  
   useEffect(() => {
+    
     async function UserMainData() {
       const res = await getUserMainData(id);
       setUserData(res.data);
+      
     };
     async function UserPerformance() {
       const res = await getUserPeformance(id);
@@ -46,8 +50,9 @@ const Home = () => {
     UserPerformance();
     UserSession();
     UserActivity();
+    
   }, [id]);
-
+  ;
   return (
     <div>
       <NavbarHor />

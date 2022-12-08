@@ -9,6 +9,7 @@ import {
 
 const SimpleCharts = (prop) => {
   
+  
   function titleDayXAxis(day) {
     switch (day) {
       case 1:
@@ -32,13 +33,13 @@ const SimpleCharts = (prop) => {
 
   return (
     <div className="simple-chart">
-      
+      <span className="session-title-simple-chart">Durée moyenne des sessions</span>
       <ResponsiveContainer width="100%" height="100%">
       <LineChart 
       
        data={prop.userSession?.sessions} >
         <CartesianGrid horizontal={false} vertical={false} fill="#FF0000"  />
-        <XAxis dataKey="day" tickFormatter={titleDayXAxis} tickLine={false} color="white" axisLine={false} />
+        <XAxis dataKey="day" tickFormatter={titleDayXAxis} tickLine={false} stroke="white" axisLine={false}  />
 
         <Tooltip />
 

@@ -13,10 +13,10 @@ const Welcome = (props) => {
 };
 
 
-Welcome.propTypes = {
-    props: PropTypes.object,
-    userInfos: PropTypes.object,
-    firstName: PropTypes.string,
-};
+// Welcome.propTypes = {
+//     props: PropTypes.object,
+//     userInfos: PropTypes.object,
+//     firstName: PropTypes.string,
+// };
 
 export default Welcome;

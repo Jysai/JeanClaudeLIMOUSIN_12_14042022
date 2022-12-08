@@ -10,10 +10,15 @@ import PropTypes from "prop-types";
 
 const RadarCharts = (prop) => {
 
+
+
  
   function titlePolarAngle(kind) {
+    
     switch (kind) {
+      
       case 1:
+        
         return "Cardio";
       case 2:
         return "Energie";
@@ -32,13 +37,13 @@ const RadarCharts = (prop) => {
   return (
     
     <div className="radar-chart">
-      <ResponsiveContainer width="100%" height="100%">
+      <ResponsiveContainer>
         <RadarChart
           outerRadius={80}
           data={prop.userPerformance?.data}
           fill="white"
         >
-          <PolarGrid radialLines={false} />
+          <PolarGrid gridType="polygon"  polarRadius={[10, 20, 40, 60, 80]} stroke="#fff" radialLines={false} />
           <PolarAngleAxis dataKey="kind" tickFormatter={titlePolarAngle} />
 
           <Radar dataKey="value" fill="#FF0101" fillOpacity={0.7} />
@@ -48,9 +53,15 @@ const RadarCharts = (prop) => {
   );
 };
 
-RadarCharts.prototypes = {
-  prop: PropTypes.array,
-  data: PropTypes.array,
-};
+// RadarCharts.propTypes = {
+//   userPerformance: PropTypes.objectOf(
+    
+//         {data: PropTypes.array,
+//         kind: PropTypes.object,
+//         userId: PropTypes.object})
+
+// };
+
+
 
 export default RadarCharts;

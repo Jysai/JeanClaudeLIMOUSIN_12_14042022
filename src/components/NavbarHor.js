@@ -8,23 +8,23 @@ const NavbarHor = () => {
             <img src={Logo} alt="logo sportSee" className="logo-navbar" />
             
             <ul  className='link-navbar'>        
-                <NavLink to="/" 
+                <NavLink
                 className={(nav) => (nav.isActive ? "nav-active" : "")}
                 end
                 >
                     <li className='nav-home'>Accueil</li>
                 </NavLink>
-                <NavLink to="/profil" 
+                <NavLink
                 className={(nav) => (nav.isActive ? "nav-active" : "")}
                 >
                     <li className='nav-profil'>Profil</li>
                 </NavLink>
-                <NavLink to="/setting" 
+                <NavLink 
                 className={(nav) => (nav.isActive ? "nav-active" : "")}
                 >
                     <li className='nav-setting'>Réglage</li>
                 </NavLink>
-                <NavLink to="/community" 
+                <NavLink 
                 className={(nav) => (nav.isActive ? "nav-active" : "")}
                 >
                     <li className='nav-community'>Communauté</li>
