@@ -1,6 +1,6 @@
 # Project
 
-*Projet SportSee*
+*Projet*
 
 
 ### Technologies:
@@ -13,7 +13,6 @@
 # Start
 
 `git clone https://github.com/Jysai/JeanClaudeLIMOUSIN_12_14042022`
-
 
 
 ### Backend :
