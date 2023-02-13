@@ -1,7 +1,5 @@
 # Project
 
-*Projet*
-
 
 ### Technologies:
 
