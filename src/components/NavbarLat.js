@@ -5,7 +5,12 @@ import Swim from "../assets/img/swim.png";
 import Bike from "../assets/img/bike.png";
 import Yoga from "../assets/img/yoga.png";
 import Muscle from "../assets/img/body.png";
+const currentYear = new Date().getFullYear();
 
+/**
+ * React Component's NavbarLat
+ * @returns Element for the lateral navigation bar
+*/
 const NavbarLat = () => {
   return (
     <div>
@@ -33,7 +38,7 @@ const NavbarLat = () => {
           </NavLink>
         </ul>
       </div>
-      <span className="copyright">Copyright, SportSee 2020</span>
+      <span className="copyright">Copyright, SportSee {currentYear}</span>
     </div>
   );
 };

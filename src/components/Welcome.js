@@ -1,9 +1,14 @@
 import React from 'react';
 import PropTypes from "prop-types";
 
+/**
+ * React Component's welcome
+ * @param {Object} userInfos
+ * @returns Element for welcome message
+*/
 const Welcome = (props) => {
-    
-    
+   
+  
     return (
         <div className='welcome'>
             <h1 className='welcome-title'> Bonjour, <span className='welcome-name'>{props.userInfos?.firstName}</span></h1>
@@ -13,10 +18,15 @@ const Welcome = (props) => {
 };
 
 
-// Welcome.propTypes = {
-//     props: PropTypes.object,
-//     userInfos: PropTypes.object,
-//     firstName: PropTypes.string,
-// };
+
+
+
+Welcome.propTypes = {
+    userInfos: PropTypes.shape({
+      age: PropTypes.number,
+      firstName: PropTypes.string,
+      lastname: PropTypes.string,
+    }),
+  };
 
 export default Welcome;

@@ -4,9 +4,11 @@ import NavbarHor from "../components/NavbarHor";
 import NavbarLat from "../components/NavbarLat";
 import { Link } from "react-router-dom";
 
-
+/**
+ * React page's error 
+ * @returns Element for error message
+*/
 const Home = () => {
-
 
   return (
     <div>

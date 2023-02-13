@@ -1,7 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+/**
+ * React Component's Nutrition
+ * @param {Object} nutrition
+ * @returns Element to indicate the nutritions
+*/
 const Nutrition = (prop) => {
+
   return (
     <div className="nutrition">
       <div className="wrapper-nutrition">
@@ -146,7 +152,9 @@ const Nutrition = (prop) => {
 };
 
 Nutrition.propTypes = {
-  nutrition: PropTypes.object,
+  nutrition: PropTypes.objectOf(PropTypes.number)
 };
+
+
 
 export default Nutrition;

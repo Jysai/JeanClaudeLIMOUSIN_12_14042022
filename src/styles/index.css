@@ -29,11 +29,11 @@ li {
 
 .navbar {
   display: flex;
- 
+
   background: black;
   height: 91px;
   align-items: center;
-  
+
   font-size: 24px;
 }
 
@@ -45,7 +45,6 @@ li {
   width: 100%;
   min-width: 475px;
   height: 24px;
-  
 }
 
 a {
@@ -58,17 +57,12 @@ li {
 .main {
   display: flex;
   justify-content: flex-start;
-  
 }
-
-
 
 .dashboard {
   display: flex;
   flex-direction: column;
   margin: 50px 0px 0px 100px;
-
-  
 }
 
 /* Navbar Latéral */
@@ -76,7 +70,7 @@ li {
 .navbar-lat {
   display: flex;
   background: black;
- 
+
   min-width: 117px;
   align-items: center;
   margin-top: -91px;
@@ -95,7 +89,6 @@ li {
 /* Welcome */
 
 .welcome {
-  
   margin-bottom: 80px;
 }
 
@@ -153,19 +146,13 @@ li {
   display: flex;
   flex-direction: column;
   width: 260px;
- 
-  
 }
 
 /* All-charts */
 
-
 /* Radar-Chart */
 
 .radar-chart {
-
-
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,8 +161,8 @@ li {
   border-radius: 5px;
   font-size: 12px;
 
-    height: 263px;
-    width: 258px;
+  height: 263px;
+  width: 258px;
 }
 
 /* Radial-Chart */
@@ -192,20 +179,19 @@ li {
   width: 258px;
 }
 
-.legedend-radialchart-top{
-    margin-left: 30px;
-    
-font-style: normal;
-font-weight: 600;
-font-size: 15px;
-line-height: 24px;
-/* identical to box height, or 160% */
+.legedend-radialchart-top {
+  margin-left: 30px;
 
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
 
-color: #20253A;
+  color: #20253a;
 }
 
-.legend-objectif-radial{
+.legend-objectif-radial {
   position: absolute;
   top: 111px;
   left: 74px;
@@ -215,24 +201,17 @@ color: #20253A;
   text-align: center;
 }
 
-.percent-radial-chart{
+.percent-radial-chart {
   font-weight: 700;
-font-size: 26px;
-line-height: 26px;
+  font-size: 26px;
+  line-height: 26px;
 
-
-
-
-color: #282D30;
+  color: #282d30;
 }
 
-.objectif-radial-chart{
-color: 
-#74798C;
-
-
+.objectif-radial-chart {
+  color: #74798c;
 }
-
 
 /* simple-chart */
 
@@ -244,7 +223,7 @@ color:
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+
   height: 263px;
   width: 258px;
 }
@@ -264,7 +243,6 @@ color:
 
   mix-blend-mode: normal;
   opacity: 0.5;
-  
 }
 
 /* Bar-chart */
@@ -275,54 +253,54 @@ color:
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
   border-radius: 5px;
   margin-bottom: 44px;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
- 
- padding-left: 15px;
+
+  padding-left: 15px;
 }
 
 .legend-barchart-top {
   display: flex;
   justify-content: space-between;
-width: 95%;
+  width: 95%;
   margin: 0 auto;
   font-weight: 500;
 }
 
-.session-title-simple-chart{
+.session-title-simple-chart {
   width: 147px;
   margin-top: 34px;
-    margin-left: 29px;
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-line-height: 24px;
-/* or 160% */
+  margin-left: 29px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  /* or 160% */
 
+  color: #ffffff;
 
-color: #FFFFFF;
-
-mix-blend-mode: normal;
-opacity: 0.5;
+  mix-blend-mode: normal;
+  opacity: 0.5;
 }
 
-.point-legend{
+.point-legend {
   margin-right: 15px;
 }
 
-.legend-weight-calorie{
+.legend-weight-calorie {
   display: flex;
   justify-content: space-between;
   width: 300px;
 }
 
-.legend-calorie, .legend-weight{
+.legend-calorie,
+.legend-weight {
   display: flex;
   align-items: center;
-  color: #74798C;
+  color: #74798c;
 }
 
 .analytics-dashboard {
@@ -330,172 +308,188 @@ opacity: 0.5;
   flex-wrap: wrap;
 }
 
+.calorie,
+.proteine,
+.lipide,
+.glucide {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
 
-.calorie, .proteine, .lipide, .glucide{
-
-font-weight: 500;
-font-size: 14px;
-line-height: 24px;
-/* identical to box height, or 171% */
-
-
-color: #74798C;
+  color: #74798c;
 }
 
-.copyright{
+.copyright {
   position: absolute;
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 24px;
-color: #FFFFFF;
-transform: rotate(-90deg);
-top: 910px;
-
-
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: #ffffff;
+  transform: rotate(-90deg);
+  top: 910px;
 }
 
-.daily-activity-title{
+.daily-activity-title {
   font-weight: 600;
 }
 
-.main-wrap-charts{
+.main-wrap-charts {
   margin-right: 27px;
 }
 
-.wrap-error{
-  height: 877px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-
-.error-and-message404{
+.wrap-error {
+  width: 100%;
   display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-.error-404{
-  font-size: 12vh;
-  color: red;
-}
-.message-404{
-
-}
-.home-404{
-
-}
-
-@media screen and (max-width: 1370px) {
-  .copyright{
-    top: 650px;
-  }
-
-  .navbar-lat{
-    height: 780px;
-  }
-
-  .session-title-simple-chart {
-     width: 100%; 
-     margin-top: 0px;
-    margin-left: 8px;
-
-  }
-
-.dashboard{
- 
-  margin: 0px 0px 0px 0px;
-  margin-left: 32px;
-}
-
-.welcome-title {
-
-  font-size: 32px;
-
-}
-
-.legedend-radialchart-top{
-  margin: 10px;
-}
-
-.main-wrap-charts{
-  margin-right: 0px;
-}
-
-.nutrition{
- 
-  flex-direction: row;
-  width: 835px;
-  justify-content: space-around;
-  
-}
-
-.wrapper-nutrition{
-  width:  191px;;
-  margin-bottom: 5px;
-  height: 89px
-}
-
-
-
-.info-wrapper-nutrition{
-  
-  margin-left: 15px;
-}
-
-
-.wrap-simple-radar-and-radial-charts{
-  margin-bottom: 15px;
- 
-}
-.analytics-dashboard {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  
+  align-items: center;
+  flex-direction: column;
 }
 
-.bar-chart{
-  margin-bottom: 15px;
-  
-}
-
-.welcome{
-  margin: 10px;
-  margin-top: 0px;
-}
-
-
-.simple-chart, .radial-chart{
-  height: 201px;
-    width: 201px;
-}
-
-.legend-objectif-radial{
-  position: absolute;
-  top: 75px;
-  left: 52px;
+.error-and-message404 {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
+.error-404 {
+  font-size: 12vh;
+  color: red;
+}
+.message-404 {
+}
+.home-404 {
+}
 
-.percent-radial-chart{
+.custom-tooltip-barchart {
+  height: 63px;
+  width: 39px;
+  background: red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: none;
+}
+
+.custom-tooltip-simplechart{
+  background: white;
+  padding: 10px;
+}
+
+.label-simplechart{
+
+font-weight: 500;
+font-size: 8px;
+line-height: 24px;
+/* identical to box height, or 300% */
+
+text-align: center;
+color: #000000;
 
 }
 
-.radar-chart{
-  height: 201px;
+.custom-span-barchart {
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 24px;
+
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 1370px) {
+  .copyright {
+    top: 650px;
+  }
+
+  .navbar-lat {
+    height: 780px;
+  }
+
+  .session-title-simple-chart {
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 8px;
+  }
+
+  .dashboard {
+    margin: 0px 0px 0px 0px;
+    margin-left: 32px;
+  }
+
+  .welcome-title {
+    font-size: 32px;
+  }
+
+  .legedend-radialchart-top {
+    margin: 10px;
+  }
+
+  .main-wrap-charts {
+    margin-right: 0px;
+  }
+
+  .nutrition {
+    flex-direction: row;
+    width: 835px;
+    justify-content: space-around;
+  }
+
+  .wrapper-nutrition {
+    width: 191px;
+    margin-bottom: 5px;
+    height: 89px;
+  }
+
+  .info-wrapper-nutrition {
+    margin-left: 15px;
+  }
+
+  .wrap-simple-radar-and-radial-charts {
+    margin-bottom: 15px;
+  }
+  .analytics-dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .bar-chart {
+    margin-bottom: 15px;
+  }
+
+  .welcome {
+    margin: 10px;
+    margin-top: 0px;
+  }
+
+  .simple-chart,
+  .radial-chart {
+    height: 201px;
+    width: 201px;
+  }
+
+  .legend-objectif-radial {
+    position: absolute;
+    top: 75px;
+    left: 52px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .percent-radial-chart {
+  }
+
+  .radar-chart {
+    height: 201px;
     width: 250px;
-}
+  }
 
-.bar-chart{
-  height: 268px;
-}
-
+  .bar-chart {
+    height: 268px;
+  }
 }
 
 /*  */

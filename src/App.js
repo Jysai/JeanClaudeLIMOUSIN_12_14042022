@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Error from "./pages/Error";
 import "./styles/index.css";
 
+
 function App() {
   return (
     <div className="App">

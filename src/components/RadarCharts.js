@@ -8,11 +8,15 @@ import {
 import React from "react";
 import PropTypes from "prop-types";
 
+/**
+ * React Component's RadarCharts
+ * @param {Object} userPerformance
+ * @external Recharts library
+ * @see https://recharts.org/en-US/api/RadarChart
+ * @returns Element for radar chart
+*/
 const RadarCharts = (prop) => {
 
-
-
- 
   function titlePolarAngle(kind) {
     
     switch (kind) {
@@ -39,28 +43,31 @@ const RadarCharts = (prop) => {
     <div className="radar-chart">
       <ResponsiveContainer>
         <RadarChart
-          outerRadius={80}
+          outerRadius={81}
           data={prop.userPerformance?.data}
           fill="white"
+          startAngle={30} endAngle={-330}
         >
           <PolarGrid gridType="polygon"  polarRadius={[10, 20, 40, 60, 80]} stroke="#fff" radialLines={false} />
           <PolarAngleAxis dataKey="kind" tickFormatter={titlePolarAngle} />
 
           <Radar dataKey="value" fill="#FF0101" fillOpacity={0.7} />
         </RadarChart>
+
+        
       </ResponsiveContainer>
     </div>
   );
 };
 
-// RadarCharts.propTypes = {
-//   userPerformance: PropTypes.objectOf(
-    
-//         {data: PropTypes.array,
-//         kind: PropTypes.object,
-//         userId: PropTypes.object})
 
-// };
+RadarCharts.propTypes = {
+  userPerformance: PropTypes.shape({
+    data: PropTypes.array,
+    kind: PropTypes.objectOf(PropTypes.string),
+    userId: PropTypes.number,
+  }),
+};
 
 
 

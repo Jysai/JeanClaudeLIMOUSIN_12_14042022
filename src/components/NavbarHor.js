@@ -2,6 +2,10 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Logo from '../assets/img/logo.png'
 
+/**
+ * React Component's NavbaHor
+ * @returns Element for the horizontal navigation bar
+*/
 const NavbarHor = () => {
     return (
         <div className="navbar">

@@ -1,25 +1,31 @@
 import React from "react";
-import { PieChart, Pie, Cell, Label, ResponsiveContainer } from "recharts";
+import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 import PropTypes from "prop-types";
 
-
+/**
+ * React Component's RadialCharts
+ * @param {Object} userInfos
+ * @external Recharts library
+ * @see https://recharts.org/en-US/api/PieChart
+ * @returns Element for pie chart
+ */
 const RadialCharts = (prop) => {
 
+  const score = prop.userInfos;
+  const scorePercent = score * 100;
 
-const score = prop.userInfos;
-const scorePercent = score * 100
+  const data = [
+    { id: "1", name: "L1", value: 100 },
+    { id: "2", name: "L2", value: scorePercent },
+  ];
 
-
-
-const data = [
-  { id: "1", name: "L1", value: 100 },
-  { id: "2", name: "L2", value: scorePercent },
-];
-  
   return (
     <div className="radial-chart">
       <span className="legedend-radialchart-top">Score</span>
-      <div className="legend-objectif-radial"><span className="percent-radial-chart">{scorePercent}%</span><span className="objectif-radial-chart">de votre objectif</span></div>
+      <div className="legend-objectif-radial">
+        <span className="percent-radial-chart">{scorePercent}%</span>
+        <span className="objectif-radial-chart">de votre objectif</span>
+      </div>
       <ResponsiveContainer width="100%" minHeight={150} maxHeight={200}>
         <PieChart>
           <Pie
@@ -33,7 +39,6 @@ const data = [
             paddingAngle={0}
             blendStroke
           >
-            
             <Cell key="test" fill="#CCC" />
           </Pie>
         </PieChart>
@@ -43,9 +48,6 @@ const data = [
 };
 
 RadialCharts.propTypes = {
-  props: PropTypes.number,
-  score: PropTypes.number,
-  firstName: PropTypes.string,
+  userInfo: PropTypes.number,
 };
-
 export default RadialCharts;
