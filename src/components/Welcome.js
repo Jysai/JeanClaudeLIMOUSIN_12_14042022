@@ -18,9 +18,6 @@ const Welcome = (props) => {
 };
 
 
-
-
-
 Welcome.propTypes = {
     userInfos: PropTypes.shape({
       age: PropTypes.number,

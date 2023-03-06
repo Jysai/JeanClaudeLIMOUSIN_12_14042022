@@ -10,12 +10,14 @@ import PropTypes from "prop-types";
  * @returns Element for pie chart
  */
 const RadialCharts = (prop) => {
+ 
 
   const score = prop.userInfos;
   const scorePercent = score * 100;
+  const scoreRest = 100 - scorePercent
 
   const data = [
-    { id: "1", name: "L1", value: 100 },
+    { id: "1", name: "L1", value: scoreRest },
     { id: "2", name: "L2", value: scorePercent },
   ];
 

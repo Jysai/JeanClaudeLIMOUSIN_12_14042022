@@ -12,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/user/:id" element={<Home />} />
           <Route path="*" element={<Error />} />
+          <Route path="/user/*" element={<Error />} />
         </Routes>
       </Router>
     </div>

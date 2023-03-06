@@ -19,7 +19,6 @@ import PropTypes from "prop-types";
  */
 const BarCharts = (prop) => {
  
-
   function datePerNumber(prop) {
     switch (prop.day) {
       case "2020-07-07":

@@ -15,23 +15,23 @@
 
 ### Backend :
 ```
-- Ouvrez votre terminal, postionnez-vous sur backend  
-- Lancez la commande yarn pour installer les dépendances
-- Lancez la commande yarn dev pour démarrer le serveur
-/!\ Lauch on port 3000 with yarn dev /!\
+- Open your terminal, go to backend  
+- Run yarn command to install dependencies
+- Run the yarn dev command to start the server
+/!\ Launch on port 3000 with yarn dev/!\
 ```
 
 
 ### Frontend :
 ```
-A la racine du projet  
-Lancez la commande npm install  pour installer les dépendances
-Lancez la commande npm start pour démarrer
-/!\ Lauch on port 3001 /!\
+At the root of the project
+Run npm install command to install dependencies
+Run the npm start command to get started
+/!\ Launch on port 3001 /!\
 ```
 
-*Utilisateur Cecilia*: http://localhost:3001/user/18 
-*Utilisateur Karl*: http://localhost:3001/user/12 
+*User Cecilia*: http://localhost:3001/user/18 
+*User Karl*: http://localhost:3001/user/12 
 
 
 
