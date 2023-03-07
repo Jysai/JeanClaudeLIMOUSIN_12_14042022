@@ -9,7 +9,7 @@ import PropTypes from "prop-types";
  * @see https://recharts.org/en-US/api/PieChart
  * @returns Element for pie chart
  */
-const RadialCharts = (prop) => {
+const PieCharts = (prop) => {
  
 
   const score = prop.userInfos;
@@ -29,27 +29,32 @@ const RadialCharts = (prop) => {
         <span className="objectif-radial-chart">de votre objectif</span>
       </div>
       <ResponsiveContainer width="100%" minHeight={150} maxHeight={200}>
-        <PieChart>
+        <PieChart >
           <Pie
             data={data}
             dataKey="value"
-            innerRadius="90%"
+            innerRadius="89%"
             outerRadius="100%"
             fill="red"
             startAngle={90}
             endAngle={-270}
             paddingAngle={0}
-            blendStroke
+            cornerRadius={100}
+            
           >
-            <Cell key="test" fill="#CCC" />
+            <Cell key="test" fill="#FBFBFB"  />
           </Pie>
         </PieChart>
+
+     
       </ResponsiveContainer>
     </div>
   );
 };
 
-RadialCharts.propTypes = {
+PieCharts.propTypes = {
   userInfo: PropTypes.number,
 };
-export default RadialCharts;
+export default PieCharts;
+
+

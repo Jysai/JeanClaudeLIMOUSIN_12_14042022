@@ -12,7 +12,7 @@ import PropTypes from "prop-types";
  * React Component's RadarCharts
  * @param {Object} userPerformance
  * @external Recharts library
- * @see https://recharts.org/en-US/api/RadarChart
+ * @see https://recharts.org/en-US/api/LineChart
  * @returns Element for radar chart
 */
 const RadarCharts = (prop) => {
@@ -46,7 +46,8 @@ const RadarCharts = (prop) => {
           outerRadius={81}
           data={prop.userPerformance?.data}
           fill="white"
-          startAngle={30} endAngle={-330}
+          startAngle={-150} endAngle={210}
+          
         >
           <PolarGrid gridType="polygon"  polarRadius={[10, 20, 40, 60, 80]} stroke="#fff" radialLines={false} />
           <PolarAngleAxis dataKey="kind" tickFormatter={titlePolarAngle} />

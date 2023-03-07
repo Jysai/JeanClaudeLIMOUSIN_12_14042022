@@ -7,7 +7,7 @@ import NavbarHor from "../components/NavbarHor";
 import NavbarLat from "../components/NavbarLat";
 import SimpleCharts from "../components/SimpleCharts";
 import RadarCharts from "../components/RadarCharts";
-import RadialCharts from "../components/RadialCharts";
+import PieCharts from "../components/PieCharts";
 import Welcome from "../components/Welcome";
 import Nutrition from "../components/Nutrition";
 
@@ -53,7 +53,6 @@ const Home = () => {
     sessions: [{ day: "", kilogram: 0, calories: 0 }],
   });
 
-  
 
   useEffect(() => {
     async function UserMainData() {
@@ -91,7 +90,7 @@ const Home = () => {
               <div className="wrap-simple-radar-and-radial-charts">
                 <SimpleCharts userSession={userSession} />
                 <RadarCharts userPerformance={userPerformance} />
-                <RadialCharts userInfos={userData.todayScore} />
+                <PieCharts userInfos={userData.todayScore} />
               </div>
             </div>
             <Nutrition nutrition={userData.keyData} />

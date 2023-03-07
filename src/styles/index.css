@@ -374,13 +374,13 @@ li {
 
 .custom-tooltip-simplechart{
   background: white;
-  padding: 10px;
+  padding: 5px;
 }
 
 .label-simplechart{
 
 font-weight: 500;
-font-size: 8px;
+font-size: 10px;
 line-height: 24px;
 /* identical to box height, or 300% */
 
